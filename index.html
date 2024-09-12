@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="factura">
+        <div class="encabezado">
+
+            <div class="responsable">
+                <span>Responsable monotributo</span>
+                <div class="codigo">
+                    <span class="letra">C</span>
+                    <div>Código 11</div>
+                </div>
+            </div>
+            <div class="fiscales">
+                <div>Factura </div>
+                <div>N.º 0001-1</div>
+                <div>Fecha <input type="date" name="" id=""></div>
+                <div>CUIT</div>
+                <div>Ing. Brutos</div>
+                <div>Inicio de actividades</div>
+            </div>
+            <div class="receptor">
+                <span>Señor(es)</span>
+                <span></span>
+            </div>
+            <div class="domicilio">
+                <span>Domicilio</span>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="iva-contenedor">
+                <div class="iva-label">
+                    <span>IVA</span>
+                </div>
+                <div class="iva">
+                    <div>
+                        <label for="inscripto">Resp. inscripto</label>
+                        <input class="boton" type="radio" name="iva" id="inscripto">
+                        <label for="exento">Exento</label>
+                        <input class="boton"  type="radio" name="iva" id="exento">
+                        <label for="monotributo">Monotributo</label>
+                        <input class="boton"  type="radio" name="iva" id="monotributo">
+                        <label for="final">Cons. final</label>
+                        <input class="boton"  type="radio" name="iva" id="final">
+                    </div>
+                </div>
+                <div class="cuit">
+                    <span>CUIT</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="condiciones-contenedor">
+                <div class="venta-label">
+                    <span>Condiciones de venta</span>
+                </div>
+
+                <div class="condiciones">
+                    <label for="contado">Contado</label>
+                    <input class="boton" type="radio" name="condiciones" id="contado">
+                    <label for="ctacte">Cta. Cte.</label>
+                    <input class="boton" type="radio" name="condiciones" id="ctacte">
+                </div>
+                <div class="remito">
+                    <span>Remito</span>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item">
+                <div class="detalle">Detalle</div>
+                <div class="detalle">Total</div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+                <div class="detalle"></div>
+                <div class="subtotal"></div>
+            </div>
+            
+            <div class="total">
+                <div class="leyenda">Orientación al consumidor</div>
+                <div class="monto">$$$$$$$$$$$</div>
+            </div>
+        </div>
+        <div class="cai">
+            <span>Imprenta xxxxx xxxx xxx x  xxx</span>
+            <span>CAI: 0000000000000000</span>
+        </div>
+        
+    </div>
+    
+
+    
+</body>
+
+</html>

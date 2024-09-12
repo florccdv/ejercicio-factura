@@ -1,0 +1,90 @@
+.factura,
+.responsable,
+.codigo,
+.fiscales,
+.receptor,
+.domicilio,
+.iva,
+.cuit,
+.condiciones,
+.remito,
+.item,
+.detalle,
+.subtotal,
+.total,
+.leyenda,
+.monto,
+.cai,
+.condiciones-contenedor,
+.iva-contenedor,
+.iva-label,
+.venta-label {
+    border: 1px solid rgb(134, 132, 132);
+}
+
+.factura {
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.encabezado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.letra{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.responsable {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+.codigo {
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.fiscales {
+    padding-left: 50px;
+}
+
+.iva-contenedor {
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+}
+.boton{
+    width: 30px;
+    height: 20px;    
+}
+
+.condiciones-contenedor {
+    display: grid;
+    grid-template-columns: 18% 52% 30%;
+}
+
+.item, .total{
+    display: grid;
+    grid-template-columns: 70% 30%;     
+}
+.detalle, .subtotal{
+    height: 20px;
+    align-items: center; 
+}
+.cai{
+    align-items: end;
+}
+.cai{
+    display: flex;
+    justify-content: space-between;
+}
