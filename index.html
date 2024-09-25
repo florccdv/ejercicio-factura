@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">filis.es</div>
+        <div class="menu">Servicios
+            <ul class="menu-vertical">
+                <li> <a href="">Corrección ortotipográfica</a></li>
+                <li> <a href="">Corrección ortotipográfica y de estilo</a></li>
+                <li> <a href="">Corrección ortotipográfica, de estilo y de plantado</a></li>
+                <li> <a href="">Informe de lectura</a></li>
+            </ul>
+        </div>
+        <div class="perfilu">Perfil de usuario</div>
+    </header>
+
     <div class="factura">
         <div class="encabezado">
 
@@ -48,11 +62,11 @@
                         <label for="inscripto">Resp. inscripto</label>
                         <input class="boton" type="radio" name="iva" id="inscripto">
                         <label for="exento">Exento</label>
-                        <input class="boton"  type="radio" name="iva" id="exento">
+                        <input class="boton" type="radio" name="iva" id="exento">
                         <label for="monotributo">Monotributo</label>
-                        <input class="boton"  type="radio" name="iva" id="monotributo">
+                        <input class="boton" type="radio" name="iva" id="monotributo">
                         <label for="final">Cons. final</label>
-                        <input class="boton"  type="radio" name="iva" id="final">
+                        <input class="boton" type="radio" name="iva" id="final">
                     </div>
                 </div>
                 <div class="cuit">
@@ -100,21 +114,32 @@
                 <div class="detalle"></div>
                 <div class="subtotal"></div>
             </div>
-            
+
             <div class="total">
                 <div class="leyenda">Orientación al consumidor</div>
                 <div class="monto">$$$$$$$$$$$</div>
             </div>
         </div>
         <div class="cai">
-            <span>Imprenta xxxxx xxxx xxx x  xxx</span>
+            <span>Imprenta xxxxx xxxx xxx x xxx</span>
             <span>CAI: 0000000000000000</span>
         </div>
-        
-    </div>
-    
 
-    
+    </div>
+
+    <div>
+        <button class="imprimir" onclick="window.print()">Genera PDF</button>
+    </div>
+
+
+    <footer class="footer">
+        <div>Direccion</div>
+        <div>Copyrigth</div>
+        <div>Terminos y condiciones</div>
+
+    </footer>
+
+
 </body>
 
 </html>

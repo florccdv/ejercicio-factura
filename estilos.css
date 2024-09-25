@@ -22,6 +22,45 @@
     border: 1px solid rgb(134, 132, 132);
 }
 
+.header, .footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid silver;
+    height: 70px;
+}
+
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+    color: blue;
+}
+
+.menu, .perfilu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    font-style: normal;
+    color: blue;
+}
+
+.menu-vertical li{
+    list-style: none;    
+}
+
+.menu-vertical a{
+    text-decoration: none;
+}
+
+/* .menu-vertical{
+    display: none;
+}
+a:hover .menu-vertical{
+    display: block;
+} */
+
+
 .factura {
     width: 500px;
     margin: auto;
